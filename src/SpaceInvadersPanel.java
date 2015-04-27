@@ -20,9 +20,9 @@ public class SpaceInvadersPanel extends JPanel implements ActionListener {
 	List<AlienShip> aliens = new ArrayList<AlienShip>();
 	List<Bullet> alienBullets = new ArrayList<Bullet>(),
 			     defenderBullets = new ArrayList<Bullet>();
-	
+
 	List<Shield> shieldList = new ArrayList<Shield>();
-	
+
 	int x, y;
 	int numClicks = 0;
 	Timer gameTimer;
@@ -30,46 +30,42 @@ public class SpaceInvadersPanel extends JPanel implements ActionListener {
 	private double dy =1.5;
 	private int circleX;
 	private int circleY;
-	
+
 	public SpaceInvadersPanel() {
 		this.setPreferredSize(new Dimension(1000,800));
 		gameTimer = new Timer(10, this);
 		setUpKeyBindings();
 		setUpDefender();
 		setUpAliens();
-		
+
 		//gameTimer.start();
 	}
 
 	private void setUpAliens() {
-		
-		
+
+
 	}
 
 	private void setUpDefender() {
 		this.defShip.setLocation(DEF_START_X, DEF_START_Y);
-		
+
 	}
 
 	private void setUpKeyBindings() {
-		this.getInputMap().put(KeyStroke.getKeyStroke("SPACE"),
-				"fire");
-		this.getInputMap().put(KeyStroke.getKeyStroke("RIGHT"),
-				"right");
-		this.getActionMap().put("fire",
-				new AbstractAction() {
+		this.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "fire");
+		this.getInputMap().put(KeyStroke.getKeyStroke("RIGHT"), "right");
+		this.getActionMap().put("fire", new AbstractAction() {
 					@Override
 					public void actionPerformed(ActionEvent e) {
 						launchWeapon();
 					}
 		});
-		this.getActionMap().put("right",
-				new AbstractAction() {
+		this.getActionMap().put("right", new AbstractAction() {
 					@Override
 					public void actionPerformed(ActionEvent e) {
 						setDefenderDir(1);// 1 moves right, 0 moves left
 					}
-			
+
 		});
 
 	}
@@ -81,7 +77,7 @@ public class SpaceInvadersPanel extends JPanel implements ActionListener {
 		else if(i == 1) {
 			System.out.println("Ship will move right");
 		}
-			
+
 	}
 
 	protected void launchWeapon() {
@@ -97,25 +93,25 @@ public class SpaceInvadersPanel extends JPanel implements ActionListener {
 		repaint();
 	}
 	private void checkForCollision() {
-	
+
 	}
 
 	private void moveEverything() {
-		
-		
+
+
 	}
 
 	@Override
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		
+
 	}
 
 	public void start() {
 		System.out.println("Just started a new game...");
 		this.gameTimer.start();
-		
+
 	}
-	
-	
+
+
 }
