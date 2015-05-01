@@ -16,15 +16,6 @@ public class SpaceInvadersPanel extends JPanel implements ActionListener {
 
 	private static final int DEF_START_X = 100;
 	private static final int DEF_START_Y = 700;
-<<<<<<< HEAD
-//	DefenderShip defShip = new DefenderShip();
-//	List<AlienShip> aliens = new ArrayList<AlienShip>();
-//	List<Bullet> alienBullets = new ArrayList<Bullet>(),
-//			     defenderBullets = new ArrayList<Bullet>();
-//	
-//	List<Shield> shieldList = new ArrayList<Shield>();
-//	
-=======
 	DefenderShip defShip = new DefenderShip();
 	List<AlienShip> aliens = new ArrayList<AlienShip>();
 	List<Bullet> alienBullets = new ArrayList<Bullet>(),
@@ -32,7 +23,6 @@ public class SpaceInvadersPanel extends JPanel implements ActionListener {
 
 	List<Shield> shieldList = new ArrayList<Shield>();
 
->>>>>>> 9d29e5fe8df72642868276d35243822973c3cc02
 	int x, y;
 	int numClicks = 0;
 	Timer gameTimer;
@@ -48,7 +38,7 @@ public class SpaceInvadersPanel extends JPanel implements ActionListener {
 		setUpDefender();
 		setUpAliens();
 
-		//gameTimer.start();
+		gameTimer.start();
 	}
 
 	private void setUpAliens() {
@@ -57,13 +47,9 @@ public class SpaceInvadersPanel extends JPanel implements ActionListener {
 	}
 
 	private void setUpDefender() {
-<<<<<<< HEAD
-//		this.defShip.setLocation(DEF_START_X, DEF_START_Y);
 		
-=======
 		this.defShip.setLocation(DEF_START_X, DEF_START_Y);
 
->>>>>>> 9d29e5fe8df72642868276d35243822973c3cc02
 	}
 
 	private void setUpKeyBindings() {
