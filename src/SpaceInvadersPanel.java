@@ -16,13 +16,13 @@ public class SpaceInvadersPanel extends JPanel implements ActionListener {
 
 	private static final int DEF_START_X = 100;
 	private static final int DEF_START_Y = 700;
-	DefenderShip defShip = new DefenderShip();
-	List<AlienShip> aliens = new ArrayList<AlienShip>();
-	List<Bullet> alienBullets = new ArrayList<Bullet>(),
-			     defenderBullets = new ArrayList<Bullet>();
-	
-	List<Shield> shieldList = new ArrayList<Shield>();
-	
+//	DefenderShip defShip = new DefenderShip();
+//	List<AlienShip> aliens = new ArrayList<AlienShip>();
+//	List<Bullet> alienBullets = new ArrayList<Bullet>(),
+//			     defenderBullets = new ArrayList<Bullet>();
+//	
+//	List<Shield> shieldList = new ArrayList<Shield>();
+//	
 	int x, y;
 	int numClicks = 0;
 	Timer gameTimer;
@@ -47,7 +47,7 @@ public class SpaceInvadersPanel extends JPanel implements ActionListener {
 	}
 
 	private void setUpDefender() {
-		this.defShip.setLocation(DEF_START_X, DEF_START_Y);
+//		this.defShip.setLocation(DEF_START_X, DEF_START_Y);
 		
 	}
 
